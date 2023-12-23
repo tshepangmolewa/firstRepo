@@ -1,0 +1,63 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-container {
+    background-image: url(images/christmas.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+    color: #ffffff; 
+}
+
+.countdown-title {
+    font-size: 6em; 
+    margin-bottom: 100px; 
+}
+
+.until{
+	margin: 25px;
+	max-width: 700px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1em;
+	padding: 1em;
+	background: #001F3F;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	font-family: sans-serif;
+}
+
+.until__component{
+	text-align: center;
+	background: #ffffff;
+	border-radius: 5px;
+}
+
+.until__numeric{
+	color: #333333;
+	padding: 0.5em 1em;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.until__unit{
+	font-size: 1.2em;
+	padding-bottom:1em;
+	font-weight: bold;
+	color: #94001B;
+}
+
+.until__event{
+	grid-column: span 4;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+}
